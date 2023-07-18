@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Button,
   Text,
@@ -10,46 +10,42 @@ import {
   ScrollView,
   SectionList
 } from 'react-native';
+import RadioButton from './Components/RadioButton';
 
 const App = () => {
 
-  const users = [
-    {
-      id:1,
-      name: 'Anil',
-      data:["PHP","React-js","Angular"]
-    },
-    {
-      id:2,
-      name: 'Benod',
-      data:["Java","js","HTML"]
-    },
-    {
-      id:3,
-      name: 'lonli',
-      data:["C","C++","Python"]
-    },
-    {
-      id:4,
-      name: "Tony",
-      data:["CSS","Bootstrap","HTML"]
-    },
-  ]
-
+ 
 
   return (
-    <View>
-      <Text style={{ fontSize: 31}}>Section List in React-Native</Text>
-      <SectionList
-      sections={users}
-      renderItem={({item})=><Text style={{fontSize:20, marginLeft:20}}>{item}</Text>}
-      renderSectionHeader={({section:{name}})=>(
-      <Text style={{fontSize:25, color:'red'}}>{name}</Text>
-  )}
-      />
+    <View style={styles.main}>
+
+
+    <RadioButton/>
     </View>
 
 
+/* <TouchableOpacity onPress={()=>{setSelect(2)}}>
+        <View style={styles.radioWrapper}>
+          <View style={styles.radio}>
+          {
+            select == 2 ? <View style={styles.radioBg}></View> : null
+        }
+          </View>
+          <Text style={styles.radioText}>Radio 2</Text>
+        </View>
+      </TouchableOpacity> */
+
   );
 };
+
+
+
+const styles = StyleSheet.create({
+main:{
+    flex:1,
+    alignItems: 'center',
+    justifyContent:'center'
+
+}
+})
 export default App;

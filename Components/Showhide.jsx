@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 
-function RadioButton() {
+function Showhide() {
   const [select, setSelect] = useState(1);
   const [email, setEmail] = useState('')
   const [secureTextEntry, setSecureTextEntry] = useState(true)
@@ -68,4 +68,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default RadioButton;
+export default Showhide;

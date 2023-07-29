@@ -1,0 +1,29 @@
+{
+    "users":[
+        {
+            "name": "kaju saikia",
+            "age" : 21,
+            "email": "kaju@email.com",
+            "id" : 1
+        },
+        {
+            "name": "riku saikia",
+            "age" : 21,
+            "email": "riku@email.com",
+            "id": 2
+        },
+        {
+            "name": "roku saikia",
+            "age" : 26,
+            "email": "roku@email.com",
+            "id": 3
+        },
+        {
+            "name": "aman saikia",
+            "age" : 23,
+            "email": "aman@email.com",
+            "id": 4
+        }
+        
+    ]
+}
